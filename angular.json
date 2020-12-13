@@ -28,6 +28,8 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/normalize.css/normalize.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -121,8 +123,13 @@
               "devServerTarget": "foo-dot-foo-two:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "foo-dot-foo-two"
 }
